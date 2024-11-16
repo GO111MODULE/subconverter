@@ -22,12 +22,9 @@ jobs:
           - arch: amd64
             artifact: subconverter_linux64
             os: ubuntu-latest
-          # - arch: armv7
-          #   artifact: subconverter_armv7
-          #   os: [ubuntu-latest, linux, ARM]
           - arch: aarch64
             artifact: subconverter_aarch64
-            os: ARM64
+            os: ubuntu-latest
     runs-on: ${{ matrix.os }}
     name: Linux ${{ matrix.arch }} Build
     steps:
