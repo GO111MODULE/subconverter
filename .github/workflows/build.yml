@@ -18,7 +18,7 @@ jobs:
         include:
           - arch: aarch64
             artifact: subconverter_aarch64
-            os: [arm64,aarch64]
+            os: ARM64
     runs-on: ${{ matrix.os }}
     name: Linux ${{ matrix.arch }} Build
     steps:
